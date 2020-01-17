@@ -12,8 +12,7 @@ function DevItem({ dev }){
 					<span>{dev.techs.join(', ')}</span>
 				</div>
 			</header>
-			{ /*<p>{dev.bio}</p>*/ }
-			<p>CTO na @empresaSemNome</p>
+			<p>{dev.bio ? dev.bio : 'CTO na @empresaSemNome'}</p>
 			<a href={`https://github.com/${dev.github_username}`}>Acessar perfil no GitHub</a>
 		</li>
 	);
